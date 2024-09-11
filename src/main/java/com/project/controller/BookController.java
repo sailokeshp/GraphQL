@@ -1,9 +1,12 @@
-package com.amigoscode;
+package com.project.controller;
 
 import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.data.method.annotation.QueryMapping;
 import org.springframework.graphql.data.method.annotation.SchemaMapping;
 import org.springframework.stereotype.Controller;
+
+import com.project.model.Author;
+import com.project.model.Book;
 
 import java.util.List;
 import java.util.Optional;

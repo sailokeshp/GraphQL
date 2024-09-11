@@ -1,6 +1,8 @@
 type Query {
     getAllbooks : [Book]
     bookById(id:Int):Book 
+    getCustomerById(id: ID!): Customer
+    getAllCustomers: [Customer]
 }
 
 type Book {
@@ -17,6 +19,8 @@ type Author {
 
 type Mutation {
     createCustomer(name: String!, email: String): Customer
+    updateCustomer(id: ID!, name: String, email: String): Customer
+    deleteCustomer(id: ID!): Boolean
 }
 
 type Customer {

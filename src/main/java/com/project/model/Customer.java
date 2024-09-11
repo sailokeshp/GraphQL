@@ -1,4 +1,4 @@
-package com.amigoscode;
+package com.project.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -10,7 +10,6 @@ public class Customer {
     private String name;
     private String email;
 
-    // Constructors, getters, and setters
     public Customer() {}
 
     public Customer(String name, String email) {
@@ -18,7 +17,6 @@ public class Customer {
         this.email = email;
     }
 
-    // getters and setters
     public String getId() {
         return id;
     }
